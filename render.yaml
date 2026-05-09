@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: resto-pro-v5
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: OCR_ENABLED
+        value: true
